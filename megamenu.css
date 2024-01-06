@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.menu-option {
+    background-color: #151515;
+    padding: 10px;
+    display: flex;
+   
+}
+
+.option{
+    /* padding: tạo ra khoảng trống xung quanh nội dung của phần tử */
+    padding: 5px;
+    font-size: 18px;
+    position: relative;
+    
+}
+
+.option:hover{
+    background-color: rgb(33, 33, 33);
+
+}
+
+.option:hover .link{
+    color: rgb(247, 247, 247);
+}
+
+
+.menu2{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: rgb(22, 22, 22);
+    width: 150px;
+    display: none;
+ 
+}
+
+.option:hover .menu2{
+    display: block;
+}
+.card-content{
+    position: relative;
+}
+.list-card{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+}
+.card-img{
+    position: relative;
+}
+.add-card{
+    opacity: 0;
+    position: absolute;
+    top: -200%;
+    left: 15%;
+    width: 100%;
+   
+
+}
+
+.add-card button{
+    width: 70%;
+    padding: 10px;
+    border-radius: 50px;
+}
+@keyframes showBtn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.list-card:hover .add-card{
+    animation: showBtn 3s;
+} 
+
+.card-sale{
+    background: #ff5e57;
+    color: #fff;
+    padding: 2px;
+    top: -300px;
+    left: 0px;
+    border-radius: 100px;
+    position: relative;
+
+
+}
+
+p.card {
+    border-style: solid;
+    border-color: green;
+}
